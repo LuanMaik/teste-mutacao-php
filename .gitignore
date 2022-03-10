@@ -1,0 +1,5 @@
+.idea
+vendor
+tests/test-coverage-report
+*.cache
+tests/*.log

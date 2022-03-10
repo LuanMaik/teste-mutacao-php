@@ -1,0 +1,30 @@
+{
+    "name": "luanmaik/teste-mutacao-php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Luan Maik",
+            "email": "luanmaik1994@gmail.com"
+        }
+    ],
+    "keywords": ["php", "mutation", "test", "phpunit", "testcase", "infection"],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "infection/infection": "^0.26.6",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-mutant": "vendor/bin/infection"
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
